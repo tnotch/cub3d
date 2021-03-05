@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kirilltruhan <kirilltruhan@student.42.f    +#+  +:+       +#+        */
+/*   By: kirill <kirill@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:57:27 by tnotch            #+#    #+#             */
-/*   Updated: 2020/11/10 21:22:34 by kirilltruha      ###   ########.fr       */
+/*   Updated: 2021/03/01 18:31:07 by kirill           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char				*ft_reverse(char *str);
 char				**ft_split(char const *s, char c);
 char				*ft_strchr(const char *str, int ch);
 char				*ft_strdup(const char *s1);
-char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoin(char *s1, char *s2);
 size_t  			ft_strlcat(char *restrict dst, const char *restrict src, size_t size);
 size_t				ft_strlcpy(char *restrict dst, const char *restrict src, size_t buf);
 long unsigned int	ft_strlen(const char *str);
