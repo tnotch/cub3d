@@ -10,8 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minilibx/mlx.h"
+#include "minilibx_opengl_20191021/mlx.h"
+#include "cub3d.h"
+#include "libft/libft.h"
+#include "get_next_line/get_next_line.h"
 #include <string.h>
+#include <sys/file.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 typedef struct  s_data {
 	void        *img;
@@ -29,33 +38,57 @@ void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
 	*(unsigned int*)dst = color;
 }
 
-int             main(void)
+int             main(int argc, char **argv)
 {
 	void	*mlx;
 	void	*mlx_win;
 	t_data	img;
-	int		x;
-	int		y;
-	int		i;
+    int     x;
+    int     y;
+    int     i;
+    int     j;
+    int		fd;
+    char    **map;
 
-	x = 500;
-	y = 300;
-	i = 0;
-	mlx = mlx_init();
+    fd = open("map.cub", O_RDONLY);
+    map = map_maker(fd);
+    /*mlx = mlx_init();
 	mlx_win = mlx_new_window(mlx, 640, 480, "Hello world!");
 	img.img = mlx_new_image(mlx, 640, 480);
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, 
 	&img.line_length, &img.endian);
-	while(x > 200)
-	{
-		y = 300 - i;
-		while((y > 100) && (200 - i) > 0)
-		{
-			my_mlx_pixel_put(&img, x, y--, 0xFFFFFF);
-		}
-		i++;
-		x--;
-	}
+    x = 0;
+    y = 0;
+    j = 0;*/
+    i = 0;
+    while (map[i])
+    {
+        printf("%s\n", map[i]);
+        i++;
+    }
+    printf("%s\n", map[i]);
+    /*while (map[i] != NULL)
+    {
+        while (map[i][j] != '\0')
+        {
+            if (map[i][j] == '0' && **map)
+                x++;
+            if (map[i][j] == 32 && **map)
+                x++;
+            if (map[i][j] == '1' && **map)
+                my_mlx_pixel_put(&img, x++, y, 0xFFFFFF);
+            j++;
+        }
+        y++;
+        i++;
+    }
 	mlx_put_image_to_window(mlx, mlx_win, img.img, 0, 0);
-	mlx_loop(mlx);
+	mlx_loop(mlx);*/
+    while(i >= 0)
+    {
+        free(map[i]);
+        i--;
+    }
+    free(map);
+	return (0);
 }
