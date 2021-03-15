@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tnotch <tnotch@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kirilltruhan <kirilltruhan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 13:03:38 by tnotch            #+#    #+#             */
-/*   Updated: 2020/11/21 17:14:45 by tnotch           ###   ########.fr       */
+/*   Updated: 2021/03/13 19:30:18 by kirilltruha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CUB3D_H
 # define CUB3D_H
 
-char	**map_maker(int fd);
+char	**map_maker(char *file_name);
 
 #endif

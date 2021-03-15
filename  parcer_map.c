@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*    parcer_map.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kirill <kirill@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kirilltruhan <kirilltruhan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/22 16:54:52 by kirilltruha       #+#    #+#             */
-/*   Updated: 2021/03/01 20:17:55 by kirill           ###   ########.fr       */
+/*   Updated: 2021/03/13 19:35:47 by kirilltruha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,40 +34,27 @@ int	ft_size_array(int fd)
 	return (i);
 }
 
-char	**map_maker(int fd)
+char	**map_maker(char *file_name)
 {
 	int     i;
+	int		fd;
 	char    **map;
 	char	*line;
+	const char	*file;
 	
 	i = 0;
+	file = file_name;
+	fd = open(file, O_RDONLY);
 	map = calloc((ft_size_array(fd) + 1), sizeof(char*));
+	fd = open(file, O_RDONLY);
 	while(get_next_line(fd, &line))
 	{
 		map[i] = ft_strdup(line);
-        printf("%s\n", map[i]);
-        printf("%s\n", line);
 		free(line);
 		i++;
 	}
-	map[i++] = ft_strdup(line);
-    printf("%s\n", map[i]);
+	map[i] = ft_strdup(line);
 	free(line);
 	line = NULL;
-	/*while(i >= 0)
-	{
-		free(map[i]);
-		i--;
-	}
-	free(map);*/
 	return (map);
-}
-
-int main(void)
-{
-    int fd;
-
-    fd = open("map.cub", O_RDONLY);
-
-    map_maker(fd);
 }

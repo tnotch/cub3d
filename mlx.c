@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mlx.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kirill <kirill@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kirilltruhan <kirilltruhan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 20:45:03 by kirill            #+#    #+#             */
-/*   Updated: 2021/03/03 21:05:49 by kirill           ###   ########.fr       */
+/*   Updated: 2021/03/14 17:36:50 by kirilltruha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,17 @@ void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
 	*(unsigned int*)dst = color;
 }
 
+int				hook_key(int keycode, t_data *img)
+{
+	printf("bye\n");
+	return (0);
+}
+
+int				put_pixel_sq(char *map, int mas)
+{
+	return (0);
+}
+
 int             main(int argc, char **argv)
 {
 	void	*mlx;
@@ -45,50 +56,101 @@ int             main(int argc, char **argv)
 	t_data	img;
     int     x;
     int     y;
+	int     xn;
+    int     yn;
     int     i;
     int     j;
+	int		m;
     int		fd;
     char    **map;
 
-    fd = open("map.cub", O_RDONLY);
-    map = map_maker(fd);
-    /*mlx = mlx_init();
+	map = map_maker(argv[1]);
+    mlx = mlx_init();
 	mlx_win = mlx_new_window(mlx, 640, 480, "Hello world!");
 	img.img = mlx_new_image(mlx, 640, 480);
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, 
 	&img.line_length, &img.endian);
     x = 0;
     y = 0;
-    j = 0;*/
+    j = 0;
     i = 0;
-    while (map[i])
+	m = 16;
+    while (*map)
     {
-        printf("%s\n", map[i]);
-        i++;
-    }
-    printf("%s\n", map[i]);
-    /*while (map[i] != NULL)
-    {
-        while (map[i][j] != '\0')
+        x = 0;
+		j = 0;
+		while (**map)
         {
-            if (map[i][j] == '0' && **map)
-                x++;
-            if (map[i][j] == 32 && **map)
-                x++;
-            if (map[i][j] == '1' && **map)
-                my_mlx_pixel_put(&img, x++, y, 0xFFFFFF);
-            j++;
+            if (**map == '0' && **map)
+			{
+				yn = y;
+				while (y < yn + m)
+				{
+					xn = x;
+					while (x < xn + m)
+                		x++;
+					y++;
+					x = xn;
+				}
+				y = yn;
+				x += m;
+			}
+            if (**map == 32 && **map)
+			{
+				yn = y;
+				while (y < yn + m)
+				{
+					xn = x;
+					while (x < xn + m)
+                		x++;
+					y++;
+					x = xn;
+				}
+				y = yn;
+				x += m;
+			}
+            if (**map == '1' && **map)
+			{
+				yn = y;
+				while (y < yn + m)
+				{
+					xn = x;
+					while (x < xn + m)
+                		my_mlx_pixel_put(&img, x++, y, 0xFFFFFF);
+					y++;
+					x = xn;
+				}
+				y = yn;
+				x += m;
+			}
+			if (**map == 'N' || **map == 'S' || **map == 'W' || **map == 'E' && **map)
+			{
+				yn = y;
+				while (y < yn + m)
+				{
+					xn = x;
+					while (x < xn + m)
+                		my_mlx_pixel_put(&img, x++, y, 0x0000FF);
+					y++;
+					x = xn;
+				}
+				y = yn;
+				x += m;
+			}
+            (*map)++;
         }
-        y++;
-        i++;
+        y += m;
+        (map)++;
     }
+	mlx_hook(mlx_win, 0, 1L<<0, hook_key, &img);
 	mlx_put_image_to_window(mlx, mlx_win, img.img, 0, 0);
-	mlx_loop(mlx);*/
-    while(i >= 0)
-    {
-        free(map[i]);
-        i--;
-    }
-    free(map);
+	mlx_loop(mlx);
+	i = 0;
+    while(map[i])
+	{
+		free(map[i]);
+		i++;
+	}
+	free(map);
 	return (0);
 }
