@@ -10,8 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minilibx_opengl_20191021/mlx.h"
-#include "cub3d.h"
+#include "minilibx_opengl_M1/mlx.h"
+#include "headers/keycode.h"
+#include "headers/cub3d.h"
 #include "libft/libft.h"
 #include "get_next_line/get_next_line.h"
 #include <string.h>
@@ -40,12 +41,35 @@ void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
 
 int				hook_key(int keycode, t_data *img)
 {
-	printf("bye\n");
+	if (keycode == W)
+		printf("bye\n");
+	if (keycode == 53)
+		exit (0);
 	return (0);
 }
 
-int				put_pixel_sq(char *map, int mas)
+int				put_pixel_sq(int m, int *w, int *h)
 {
+	int y;
+	int x;
+	int yn;
+	int xn;
+	
+	y = *h;
+	x = *w;
+	yn = y;
+	while (y < yn + m)
+	{
+		xn = x;
+		while (x < xn + m)
+			x++;
+		y++;
+		x = xn;
+	}
+	y = yn;
+	x += m;
+	*h = y;
+	*w = x;
 	return (0);
 }
 
@@ -59,9 +83,7 @@ int             main(int argc, char **argv)
 	int     xn;
     int     yn;
     int     i;
-    int     j;
 	int		m;
-    int		fd;
     char    **map;
 
 	map = map_maker(argv[1]);
@@ -72,43 +94,16 @@ int             main(int argc, char **argv)
 	&img.line_length, &img.endian);
     x = 0;
     y = 0;
-    j = 0;
-    i = 0;
 	m = 16;
     while (*map)
     {
         x = 0;
-		j = 0;
 		while (**map)
         {
             if (**map == '0' && **map)
-			{
-				yn = y;
-				while (y < yn + m)
-				{
-					xn = x;
-					while (x < xn + m)
-                		x++;
-					y++;
-					x = xn;
-				}
-				y = yn;
-				x += m;
-			}
+				put_pixel_sq(m, &x, &y);
             if (**map == 32 && **map)
-			{
-				yn = y;
-				while (y < yn + m)
-				{
-					xn = x;
-					while (x < xn + m)
-                		x++;
-					y++;
-					x = xn;
-				}
-				y = yn;
-				x += m;
-			}
+	            put_pixel_sq(m, &x, &y);
             if (**map == '1' && **map)
 			{
 				yn = y;
@@ -142,7 +137,7 @@ int             main(int argc, char **argv)
         y += m;
         (map)++;
     }
-	mlx_hook(mlx_win, 0, 1L<<0, hook_key, &img);
+	mlx_hook(mlx_win, 2, 1L<<2, hook_key, &img);
 	mlx_put_image_to_window(mlx, mlx_win, img.img, 0, 0);
 	mlx_loop(mlx);
 	i = 0;

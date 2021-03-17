@@ -13,111 +13,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32163834-f74c-4773-b5a0-b9863749e4f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cub3d.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libmlx.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx/libmlx.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/font.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/interface.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_loop.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_new_image.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_new_window.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_pixel_put.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_png.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_rgb.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_string_put.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swiftsourceinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_xpm.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/font.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/font.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_init_loop.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_init_loop.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_int.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_int_str_to_wordtab.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_int_str_to_wordtab.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_mouse.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_mouse.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_image.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_image.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_window.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_window.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_window.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_opengl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_opengl.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_png.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_png.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_png.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_rgb.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_shaders.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_shaders.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_xpm.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_xpm.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ parcer_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/ parcer_map.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/headers/keycode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/minilibx_opengl_M1/libmlx.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out.dSYM/Contents/Resources/DWARF/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_next_line" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_atoi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_bzero.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_bzero.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_calloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_calloc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalnum.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isalnum.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalpha.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isalpha.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isascii.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isascii.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isdigit.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isdigit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isprint.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isprint.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_itoa.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstadd_back.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstadd_back.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstadd_front.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstadd_front.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstclear.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstclear.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstdelone.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstdelone.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstiter.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstiter.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstlast.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstlast.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstmap.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstmap.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstnew.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstsize.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_lstsize.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memccpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memccpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memmove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memmove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memset.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_memset.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putchar_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_putchar_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putendl_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_putendl_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_putnbr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putstr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_putstr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_split.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_split.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strdup.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strjoin.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strlcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strlcat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strlcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strlcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strlen.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strmapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strmapi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strncmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strncmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strnstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strrchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strrchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strtrim.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strtrim.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_substr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_substr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_tolower.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_tolower.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_toupper.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_toupper.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libmlx.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cub3d.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/cub3d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_next_line" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libmlx.a" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl/libmlx.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/font.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/interface.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_loop.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_new_image.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_new_window.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/man/man3/mlx_pixel_put.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_image.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_init.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_png.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_rgb.c" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_rgb.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_string_put.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_window.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_mms_20200219/mlx_xpm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/font.c" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/font.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/font.xcf" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/font.xcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx.h" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_init_loop.m" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_init_loop.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_init_loop.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_init_loop.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_int.h" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_int.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_int_str_to_wordtab.c" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_int_str_to_wordtab.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_int_str_to_wordtab.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_int_str_to_wordtab.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_mouse.m" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_mouse.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_mouse.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_mouse.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_image.m" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_new_image.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_image.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_new_image.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_new_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_window.m" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_new_window.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_window.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_new_window.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_opengl.h" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_opengl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_opengl.m" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_opengl.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_png.c" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_png.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_png.h" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_png.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_png.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_png.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_rgb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_shaders.c" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_shaders.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_shaders.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_shaders.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_xpm.c" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_xpm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_xpm.o" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_M1/mlx_xpm.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mlx.c" beforeDir="false" afterPath="$PROJECT_DIR$/mlx.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,11 +130,16 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/headers" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/minilibx_opengl" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -197,7 +155,8 @@
       <workItem from="1615402261482" duration="69000" />
       <workItem from="1615402334212" duration="682000" />
       <workItem from="1615403038175" duration="5153000" />
-      <workItem from="1615487202043" duration="4754000" />
+      <workItem from="1615487202043" duration="5985000" />
+      <workItem from="1615832555413" duration="4804000" />
     </task>
     <servers />
   </component>
