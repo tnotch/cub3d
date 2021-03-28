@@ -6,7 +6,7 @@
 /*   By: kirilltruhan <kirilltruhan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 20:45:03 by kirill            #+#    #+#             */
-/*   Updated: 2021/03/14 17:36:50 by kirilltruha      ###   ########.fr       */
+/*   Updated: 2021/03/28 16:57:28 by kirilltruha      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 typedef struct  s_data {
 	void        *img;
 	char        *addr;
+	char		**map;
 	int         bits_per_pixel;
 	int         line_length;
 	int         endian;
@@ -37,15 +38,6 @@ void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
 
 	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
 	*(unsigned int*)dst = color;
-}
-
-int				hook_key(int keycode, t_data *img)
-{
-	if (keycode == W)
-		printf("bye\n");
-	if (keycode == 53)
-		exit (0);
-	return (0);
 }
 
 int				put_pixel_sq(int m, int *w, int *h)
@@ -73,6 +65,69 @@ int				put_pixel_sq(int m, int *w, int *h)
 	return (0);
 }
 
+int				hook_key(int keycode, t_data *image)
+{
+    char	**map;
+	t_data	img;
+	int		x;
+	int		y;
+	int		xn;
+	int		yn;
+	int		m;
+
+	map	= image->map;
+	img.img = image->img;
+	img.addr = mlx_get_data_addr(image->img, &image->bits_per_pixel, 
+	&image->line_length, &image->endian);
+	if (keycode == 0)
+	{
+	while (*map)
+    {
+        x = 0;
+		while (**map)
+        {
+            if (**map == '0' && **map)
+				put_pixel_sq(m, &x, &y);
+            if (**map == 32 && **map)
+	            put_pixel_sq(m, &x, &y);
+            if (**map == '1' && **map)
+			{
+				yn = y;
+				while (y < yn + m)
+				{
+					xn = x;
+					while (x < xn + m)
+                		my_mlx_pixel_put(&img, x++, y, 0xFFFFFF);
+					y++;
+					x = xn;
+				}
+				y = yn;
+				x += m;
+			}
+			if (**map == 'N' || **map == 'S' || **map == 'W' || **map == 'E' && **map)
+			{
+				yn = y;
+				while (y < yn + m)
+				{
+					xn = x;
+					while (x < xn + m)
+                		my_mlx_pixel_put(&img, x++, y, 0x0000FF);
+					y++;
+					x = xn;
+				}
+				y = yn;
+				x += m;
+			}
+            (*map)++;
+        }
+        y += m;
+        (map)++;
+    }
+	}
+	image = &img;
+	return (0);
+}
+
 int             main(int argc, char **argv)
 {
 	void	*mlx;
@@ -86,13 +141,13 @@ int             main(int argc, char **argv)
 	int		m;
     char    **map;
 
-	map = map_maker(argv[1]);
+	img.map = map_maker(argv[1]);
     mlx = mlx_init();
 	mlx_win = mlx_new_window(mlx, 640, 480, "Hello world!");
 	img.img = mlx_new_image(mlx, 640, 480);
-	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, 
-	&img.line_length, &img.endian);
-    x = 0;
+	//img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, 
+	//&img.line_length, &img.endian);
+    /*x = 0;
     y = 0;
 	m = 16;
     while (*map)
@@ -136,7 +191,7 @@ int             main(int argc, char **argv)
         }
         y += m;
         (map)++;
-    }
+    }*/
 	mlx_hook(mlx_win, 2, 1L<<2, hook_key, &img);
 	mlx_put_image_to_window(mlx, mlx_win, img.img, 0, 0);
 	mlx_loop(mlx);
